@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "renlin-code.auth-ms.v1;auth-msv1";
+option go_package = "renlin-code.sso.v1;ssov1";
 
 service Auth {
     rpc Signin (SigninRequest) returns (SigninResponse);

@@ -1,1 +1,1 @@
-# grpc-auth-microservice_protos
+# grpc-sso-microservice_protos  
