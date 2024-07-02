@@ -5,27 +5,27 @@ package auth;
 option go_package = "renlin-code.sso.v1;ssov1";
 
 service Auth {
-    rpc Signin (SigninRequest) returns (SigninResponse);
-    rpc Login (LoginRequest) returns (LoginResponse);
+    rpc SignUp (SignUpRequest) returns (SignUpResponse);
+    rpc SignIn (SignInRequest) returns (SignInResponse);
     rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse);
 }
 
-message SigninRequest {
+message SignUpRequest {
     string email = 1;
     string password = 2;
 }
 
-message SigninResponse {
+message SignUpResponse {
     int64 user_id = 1;
 }
 
-message LoginRequest {
+message SignInRequest {
     string email = 1;
     string password = 2;
     int32 app_id = 3;
 }
 
-message LoginResponse {
+message SignInResponse {
     string token = 1;
 }
 
